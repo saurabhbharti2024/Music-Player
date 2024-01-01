@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music-player</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <header class="header">
+            <div class="logo">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.RhR81nWsYmMDEEUSxJibGwHaFj&pid=Api&P=0&h=180">
+                <p class="fav">Favourites</p>
+            </div>
+            <div class="searchbox-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search" fdprocessedid="fqj62r">
+                    <i class="fas fa-microphone"></i>
+                </div>
+                <i class="fas bell fa-bell"></i>
+                <img class="profile-photo" src="https://1.bp.blogspot.com/-iRQOEw6_Ihs/XUV4YHyOFBI/AAAAAAAAU3U/fNsUghjCm_IgrVpGc8q5utVR-nR5W-8QgCLcBGAs/s1600/Tiranga%2B%252811%2529.jpg">
+            </div>
+        </header>
+
+        <div class="for-responsiveness">
+            <main>
+                <div class="carousel">
+                <div id="slider">
+                    <input type="radio" name="slider" id="s1" checked="">
+                    <input type="radio" name="slider" id="s2">
+                    <input type="radio" name="slider" id="s3">
+                    <input type="radio" name="slider" id="s4">
+                    <input type="radio" name="slider" id="s5">
+            
+                    <label for="s1" id="slide1"><img src="https://tse4.mm.bing.net/th?id=OIP.ldh5eSAZPiheCzXma8tX8QHaJ4&pid=Api&P=0&h=180" alt=""></label>
+                    <label for="s2" id="slide2"><img src="https://tse2.mm.bing.net/th?id=OIP.tb3L-2R-wkIFKpraZqGbQgHaEo&pid=Api&P=0&h=180" alt=""></label>
+                    <label for="s3" id="slide3"><img src="https://tse3.mm.bing.net/th?id=OIP.maF7RPo1J6u9wZX4XZemdwHaKM&pid=Api&P=0&h=180" alt=""></label>
+                    <label for="s4" id="slide4"><img src="https://tse1.mm.bing.net/th?id=OIP.qx-bMcR72a9b03rBvH_mOgHaHO&pid=Api&P=0&h=180" alt=""></label>
+                    <label for="s5" id="slide5"><img src="https://tse4.mm.bing.net/th?id=OIP.D6XJpZGZ2ZGt3QgdU4j_ZwHaFj&pid=Api&P=0&h=180" alt=""></label>
+                </div>
+            </div>
+
+                <div id="queue-1" class="queue-container">
+                    <div class="queue-header">
+                        <p>Songs</p>
+                        <div class="queue-btn-container">
+
+                            <!--  button for dropdown effect -->
+                            <label for="mycheckbox">View All <span><i class="fas fa-angle-down"></i></span></label>
+                            <input type="checkbox" id="mycheckbox">
+                            <div class="queue-btn-dropdown">
+                                <a href="">Playlists</a>
+                                <hr>
+                                <a href="">Favourite Songs</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="queue-elements-container">
+                    
+                        <div class="queue-element">
+                            <div class="song-image-container">
+                                <i class="fas currently-on-song fa-stream"></i>
+                                <div class="image-container">
+                                    
+                                    <img class="queue-song-img" src="https://tse1.mm.bing.net/th?id=OIP.u2A5QJ-FbVL9W1dm2YBacgHaEK&pid=Api&rs=1&c=1&qlt=95&w=222&h=124">
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">I Love My India </p>
+                                    <p class="queue-artist-name">Pardes</p>
+                                </div>
+                            </div>
+                            <span class="nav-link">
+                                <button fdprocessedid="9uv32t"><i class="far wishlist-icon fa-heart"></i></button>
+                            </span>
+                        </div>
+                       
+                        <div class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">02</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="https://tse1.mm.bing.net/th?id=OIP.o8WwTYEatn3NHYUKcBpUxgHaEo&pid=Api&rs=1&c=1&qlt=95&w=196&h=122">
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Jahan Daal Daal Par Sone Ke Chidiya</p>
+                                    <p class="queue-artist-name">Sikandar E Azam</p>
+                                </div>
+                            </div>
+                            <span class="nav-link">
+                                <button fdprocessedid="on4xai"><i class="far wishlist-icon fa-heart"></i></button>
+                            </span>
+    
+                        </div>
+                      
+                        <div class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">03</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="https://tse1.mm.bing.net/th?id=OIP.fic6sT6C3ijM8RU9sEpiSgHaHa&pid=Api&rs=1&c=1&qlt=95&w=119&h=119">
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Bharat Ka Rahnewala Hoon</p>
+                                    <p class="queue-artist-name">Purab Aur Paschim</p>
+                                </div>
+                            </div>
+                            <span class="nav-link">
+                                <button></button><button fdprocessedid="3p14ga"><i class="far wishlist-icon fa-heart"></i></button>                        
+                            </span>
+                        </div>
+                        <div class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">04</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="https://tse2.mm.bing.net/th?id=OIP.PXO2snYt7_94u1RnDaBrXgHaFj&pid=Api&P=0&h=180">
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Yeh Desh Hai Veer Jawanon Ka</p>
+                                    <p class="queue-artist-name">Naya Daur</p>
+                                </div>
+                            </div>
+                            <span class="nav-link">
+                                <button fdprocessedid="vr1ws"><i class="far wishlist-icon fa-heart"></i></button>
+                            </span>
+                        </div>
+                        <div class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">05</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="https://www.pngjoy.com/pngm/22/549107_tiranga-national-flag-of-india-png-hd-png.png">
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Phir Bhi Dil Hai Hindustani</p>
+                                    <p class="queue-artist-name">Phir Bhi Dil Hai Hindustani</p>
+                                </div>
+                            </div>
+                            <span class="nav-link">
+                                <button fdprocessedid="9w4oyc"><i class="far wishlist-icon fa-heart"></i></button>
+                            </span>
+                        </div>
+                        <div class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">06</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="https://tse2.mm.bing.net/th?id=OIP.PXO2snYt7_94u1RnDaBrXgHaFj&pid=Api&P=0&h=180">
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Mere Desh Ki Dharti</p>
+                                    <p class="queue-artist-name">Upkar</p>
+                                </div>
+                            </div>
+                            <span class="nav-link">
+                                <button fdprocessedid="ybq37"><i class="far wishlist-icon fa-heart"></i></button>
+                            </span>
+                        </div>
+                    </div>
+    
+                    <div class="queue-header">
+                        <p>Similar Songs</p>
+                        <div class="queue-btn-container">
+    
+                            
+                            <label for="mycheckbox">View all <span><i class="fas fa-angle-down"></i></span></label>
+                            <input type="checkbox" id="mycheckbox">
+                            <div class="queue-btn-dropdown">
+                                <a href="">Playlists</a>
+                                <hr>
+                                <a href="">Favourite Songs</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="queue-elements-container">
+                        
+                        <div class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">01</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="https://tse2.mm.bing.net/th?id=OIP.PXO2snYt7_94u1RnDaBrXgHaFj&pid=Api&P=0&h=180">
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Yeh Desh Hai Veer Jawanon Ka</p>
+                                    <p class="queue-artist-name">Naya Daur</p>
+                                </div>
+                            </div>
+                            <span class="nav-link">
+                                <button fdprocessedid="vr1ws"><i class="far wishlist-icon fa-heart"></i></button>
+                            </span>
+                        </div>
+                        <div class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">02</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="https://www.pngjoy.com/pngm/22/549107_tiranga-national-flag-of-india-png-hd-png.png">
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Phir Bhi Dil Hai Hindustani</p>
+                                    <p class="queue-artist-name">Phir Bhi Dil Hai Hindustani</p>
+                                </div>
+                            </div>
+                            <span class="nav-link">
+                                <button fdprocessedid="9w4oyc"><i class="far wishlist-icon fa-heart"></i></button>
+                            </span>
+                        </div>
+                        <div class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">03</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="https://tse2.mm.bing.net/th?id=OIP.PXO2snYt7_94u1RnDaBrXgHaFj&pid=Api&P=0&h=180">
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Mere Desh Ki Dharti</p>
+                                    <p class="queue-artist-name">Upkar</p>
+                                </div>
+                            </div>
+                            <span class="nav-link">
+                                <button fdprocessedid="ybq37"><i class="far wishlist-icon fa-heart"></i></button>
+                            </span>
+                        </div>
+    
+                        <div class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">04</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="https://tse2.mm.bing.net/th?id=OIP.PXO2snYt7_94u1RnDaBrXgHaFj&pid=Api&P=0&h=180">
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Yeh Desh Hai Veer Jawanon Ka</p>
+                                    <p class="queue-artist-name">Naya Daur</p>
+                                </div>
+                            </div>
+                            <span class="nav-link">
+                                <button fdprocessedid="vr1ws"><i class="far wishlist-icon fa-heart"></i></button>
+                            </span>
+                        </div>
+                        <div class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">05</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="https://www.pngjoy.com/pngm/22/549107_tiranga-national-flag-of-india-png-hd-png.png">
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Phir Bhi Dil Hai Hindustani</p>
+                                    <p class="queue-artist-name">Phir Bhi Dil Hai Hindustani</p>
+                                </div>
+                            </div>
+                            <span class="nav-link">
+                                <button fdprocessedid="9w4oyc"><i class="far wishlist-icon fa-heart"></i></button>
+                            </span>
+                        </div>
+                        <div class="queue-element">
+                            <div class="song-image-container">
+                                <p class="queue-number">06</p>
+                                <div class="image-container">
+                                    <img class="queue-song-img" src="https://tse2.mm.bing.net/th?id=OIP.PXO2snYt7_94u1RnDaBrXgHaFj&pid=Api&P=0&h=180">
+                                    <i class="fas play-btn fa-play"></i>
+                                </div>
+                                <div class="song-and-artist-container">
+                                    <p class="queue-song-name">Mere Desh Ki Dharti</p>
+                                    <p class="queue-artist-name">Upkar</p>
+                                </div>
+                            </div>
+                            <span class="nav-link">
+                                <button fdprocessedid="ybq37"><i class="far wishlist-icon fa-heart"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="latest-release-container">
+                    <div class="latest-release-header">
+                        <p>Latest Release</p>
+                    </div>
+                    <div class="latest-release-cards-container">
+                        <div class="latest-release-card">
+                            <div class="song-name-and-img-container">
+                                <div class="latest-release-img-container">
+                                    <label for="play-btn-checkbox1"><i class="fas latest-release-play-btn fa-play play-1"></i><i class="latest-release-pause-btn fas fa-pause pause-1"></i></label>
+                                </div>
+                                <div>
+                                    <p class="song-name">PATROTIC SONG</p>
+                                    <p class="date">15 AUG, 2023</p>
+                                </div>
+                            </div>
+
+                            <div class="latest-release-dropdown-container">
+                                <label for="latest-release-checkbox1"><i class="fas more-details fa-ellipsis-h"></i></label>
+                                <input type="checkbox" id="latest-release-checkbox1">
+                                <div class="latest-release-dropdown">
+
+                                    <div class="links-container">
+                                        <i class="fas fa-play"></i>
+                                        <a href="">Play Now</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-plus"></i>
+                                        <a href="">Add To Queue</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-bars"></i>
+                                        <a href="">Add To Favourites</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <a href=""><span></span>Get Info</a>
+                                    </div>
+
+                                </div>
+                                <p class="time">4:10</p>
+                            </div>
+
+                        </div>
+                        <div class="latest-release-card">
+                            <div class="song-name-and-img-container">
+                                <div class="latest-release-img-container">
+                                    <label for="play-btn-checkbox2"><i class="fas latest-release-play-btn fa-play play-2"></i><i class="latest-release-pause-btn fas fa-pause pause-2"></i></label>
+                                </div>
+                                <div>
+                                    <p class="song-name">PATROTIC SONG</p>
+                                    <p class="date">15 AUG, 2023</p>
+                                </div>
+                            </div>
+
+                            <div class="latest-release-dropdown-container">
+                                <label for="latest-release-checkbox2"><i class="fas more-details fa-ellipsis-h"></i></label>
+                                <input type="checkbox" id="latest-release-checkbox2">
+                                <div class="latest-release-dropdown">
+
+                                    <div class="links-container">
+                                        <i class="fas fa-play"></i>
+                                        <a href="">Play Now</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-plus"></i>
+                                        <a href="">Add To Queue</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-bars"></i>
+                                        <a href="">Add To Favourites</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <a href=""><span></span>Get Info</a>
+                                    </div>
+
+                                </div>
+                                <p class="time">4:12</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="latest-release-cards-container">
+                        <div class="latest-release-card">
+                            <div class="song-name-and-img-container">
+                                <div class="latest-release-img-container">
+                                    <label for="play-btn-checkbox3"><i class="fas latest-release-play-btn fa-play play-3"></i><i class="latest-release-pause-btn fas fa-pause pause-3"></i></label>
+                                </div>
+                                <div>
+                                    <p class="song-name">PATROTIC SONG</p>
+                                    <p class="date">15 AUG, 2023</p>
+                                </div>
+                            </div>
+
+                            <div class="latest-release-dropdown-container">
+                                <label for="latest-release-checkbox3"><i class="fas more-details fa-ellipsis-h"></i></label>
+                                <input type="checkbox" id="latest-release-checkbox3">
+                                <div class="latest-release-dropdown">
+
+                                    <div class="links-container">
+                                        <i class="fas fa-play"></i>
+                                        <a href="">Play Now</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-plus"></i>
+                                        <a href="">Add To Queue</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-bars"></i>
+                                        <a href="">Add To Favourites</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <a href=""><span></span>Get Info</a>
+                                    </div>
+
+                                </div>
+                                <p class="time">4:32</p>
+                            </div>
+
+                        </div>
+                        <div class="latest-release-card">
+                            <div class="song-name-and-img-container">
+                                <div class="latest-release-img-container">
+                                    <label for="play-btn-checkbox4"><i class="fas latest-release-play-btn fa-play play-4"></i><i class="latest-release-pause-btn fas fa-pause pause-4"></i></label>
+                                </div>
+                                <div>
+                                    <p class="song-name">PATROTIC SONG</p>
+                                    <p class="date">15 AUG, 2023</p>
+                                </div>
+                            </div>
+
+                            <div class="latest-release-dropdown-container">
+                                <label for="latest-release-checkbox4"><i class="fas more-details fa-ellipsis-h"></i></label>
+                                <input type="checkbox" id="latest-release-checkbox4">
+                                <div class="latest-release-dropdown">
+
+                                    <div class="links-container">
+                                        <i class="fas fa-play"></i>
+                                        <a href="">Play Now</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-plus"></i>
+                                        <a href="">Add To Queue</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-bars"></i>
+                                        <a href="">Add To Favourites</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <a href=""><span></span>Get Info</a>
+                                    </div>
+
+                                </div>
+                                <p class="time">4:00</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="latest-release-cards-container">
+                        <div class="latest-release-card">
+                            <div class="song-name-and-img-container">
+                                <div class="latest-release-img-container">
+                                    <label for="play-btn-checkbox3"><i class="fas latest-release-play-btn fa-play play-3"></i><i class="latest-release-pause-btn fas fa-pause pause-3"></i></label>
+                                </div>
+                                <div>
+                                    <p class="song-name">PATROTIC SONG</p>
+                                    <p class="date">15 AUG, 2023</p>
+                                </div>
+                            </div>
+
+                            <div class="latest-release-dropdown-container">
+                                <label for="latest-release-checkbox3"><i class="fas more-details fa-ellipsis-h"></i></label>
+                                <input type="checkbox" id="latest-release-checkbox3">
+                                <div class="latest-release-dropdown">
+
+                                    <div class="links-container">
+                                        <i class="fas fa-play"></i>
+                                        <a href="">Play Now</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-plus"></i>
+                                        <a href="">Add To Queue</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-bars"></i>
+                                        <a href="">Add To Favourites</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <a href=""><span></span>Get Info</a>
+                                    </div>
+
+                                </div>
+                                <p class="time">4:32</p>
+                            </div>
+
+                        </div>
+                        <div class="latest-release-card">
+                            <div class="song-name-and-img-container">
+                                <div class="latest-release-img-container">
+                                    <label for="play-btn-checkbox4"><i class="fas latest-release-play-btn fa-play play-4"></i><i class="latest-release-pause-btn fas fa-pause pause-4"></i></label>
+                                </div>
+                                <div>
+                                    <p class="song-name">PATROTIC SONG</p>
+                                    <p class="date">15 AUG, 2023</p>
+                                </div>
+                            </div>
+
+                            <div class="latest-release-dropdown-container">
+                                <label for="latest-release-checkbox4"><i class="fas more-details fa-ellipsis-h"></i></label>
+                                <input type="checkbox" id="latest-release-checkbox4">
+                                <div class="latest-release-dropdown">
+
+                                    <div class="links-container">
+                                        <i class="fas fa-play"></i>
+                                        <a href="">Play Now</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-plus"></i>
+                                        <a href="">Add To Queue</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-bars"></i>
+                                        <a href="">Add To Favourites</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <a href=""><span></span>Get Info</a>
+                                    </div>
+
+                                </div>
+                                <p class="time">4:00</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+
+               
+               
+                
+            </main>
+            <div id="queue-2" class="queue-container">
+                <div class="queue-header">
+                    <p>Songs</p>
+                    <div class="queue-btn-container">
+
+                        
+                        <label for="mycheckbox">View all <span><i class="fas fa-angle-down"></i></span></label>
+                        <input type="checkbox" id="mycheckbox">
+                        <div class="queue-btn-dropdown">
+                            <a href="">Playlists</a>
+                            <hr>
+                            <a href="">Favourite Songs</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="queue-elements-container">
+                    
+                    <div class="queue-element">
+                        <div class="song-image-container">
+                            <i class="fas currently-on-song fa-stream"></i>
+                            <div class="image-container">
+                                
+                                <img class="queue-song-img" src="https://tse1.mm.bing.net/th?id=OIP.u2A5QJ-FbVL9W1dm2YBacgHaEK&pid=Api&rs=1&c=1&qlt=95&w=222&h=124">
+                                <i class="fas play-btn fa-play"></i>
+                            </div>
+                            <div class="song-and-artist-container">
+                                <p class="queue-song-name">I Love My India </p>
+                                <p class="queue-artist-name">Pardes</p>
+                            </div>
+                        </div>
+                        <span class="nav-link">
+                            <button fdprocessedid="9uv32t"><i class="far wishlist-icon fa-heart"></i></button>
+                        </span>
+                    </div>
+                   
+                    <div class="queue-element">
+                        <div class="song-image-container">
+                            <p class="queue-number">02</p>
+                            <div class="image-container">
+                                <img class="queue-song-img" src="https://tse1.mm.bing.net/th?id=OIP.o8WwTYEatn3NHYUKcBpUxgHaEo&pid=Api&rs=1&c=1&qlt=95&w=196&h=122">
+                                <i class="fas play-btn fa-play"></i>
+                            </div>
+                            <div class="song-and-artist-container">
+                                <p class="queue-song-name">Jahan Daal Daal Par Sone Ke Chidiya</p>
+                                <p class="queue-artist-name">Sikandar E Azam</p>
+                            </div>
+                        </div>
+                        <span class="nav-link">
+                            <button fdprocessedid="on4xai"><i class="far wishlist-icon fa-heart"></i></button>
+                        </span>
+
+                    </div>
+                  
+                    <div class="queue-element">
+                        <div class="song-image-container">
+                            <p class="queue-number">03</p>
+                            <div class="image-container">
+                                <img class="queue-song-img" src="https://tse1.mm.bing.net/th?id=OIP.fic6sT6C3ijM8RU9sEpiSgHaHa&pid=Api&rs=1&c=1&qlt=95&w=119&h=119">
+                                <i class="fas play-btn fa-play"></i>
+                            </div>
+                            <div class="song-and-artist-container">
+                                <p class="queue-song-name">Bharat Ka Rahnewala Hoon</p>
+                                <p class="queue-artist-name">Purab Aur Paschim</p>
+                            </div>
+                        </div>
+                        <span class="nav-link">
+                            <button></button><button fdprocessedid="3p14ga"><i class="far wishlist-icon fa-heart"></i></button>                        
+                        </span>
+                    </div>
+                    <div class="queue-element">
+                        <div class="song-image-container">
+                            <p class="queue-number">04</p>
+                            <div class="image-container">
+                                <img class="queue-song-img" src="https://tse2.mm.bing.net/th?id=OIP.PXO2snYt7_94u1RnDaBrXgHaFj&pid=Api&P=0&h=180">
+                                <i class="fas play-btn fa-play"></i>
+                            </div>
+                            <div class="song-and-artist-container">
+                                <p class="queue-song-name">Yeh Desh Hai Veer Jawanon Ka</p>
+                                <p class="queue-artist-name">Naya Daur</p>
+                            </div>
+                        </div>
+                        <span class="nav-link">
+                            <button fdprocessedid="vr1ws"><i class="far wishlist-icon fa-heart"></i></button>
+                        </span>
+                    </div>
+                    <div class="queue-element">
+                        <div class="song-image-container">
+                            <p class="queue-number">05</p>
+                            <div class="image-container">
+                                <img class="queue-song-img" src="https://www.pngjoy.com/pngm/22/549107_tiranga-national-flag-of-india-png-hd-png.png">
+                                <i class="fas play-btn fa-play"></i>
+                            </div>
+                            <div class="song-and-artist-container">
+                                <p class="queue-song-name">Phir Bhi Dil Hai Hindustani</p>
+                                <p class="queue-artist-name">Phir Bhi Dil Hai Hindustani</p>
+                            </div>
+                        </div>
+                        <span class="nav-link">
+                            <button fdprocessedid="9w4oyc"><i class="far wishlist-icon fa-heart"></i></button>
+                        </span>
+                    </div>
+                    <div class="queue-element">
+                        <div class="song-image-container">
+                            <p class="queue-number">06</p>
+                            <div class="image-container">
+                                <img class="queue-song-img" src="https://tse2.mm.bing.net/th?id=OIP.PXO2snYt7_94u1RnDaBrXgHaFj&pid=Api&P=0&h=180">
+                                <i class="fas play-btn fa-play"></i>
+                            </div>
+                            <div class="song-and-artist-container">
+                                <p class="queue-song-name">Mere Desh Ki Dharti</p>
+                                <p class="queue-artist-name">Upkar</p>
+                            </div>
+                        </div>
+                        <span class="nav-link">
+                            <button fdprocessedid="ybq37"><i class="far wishlist-icon fa-heart"></i></button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="queue-header">
+                    <p>Similar Songs</p>
+                    <div class="queue-btn-container">
+
+                        
+                        <label for="mycheckbox">View all <span><i class="fas fa-angle-down"></i></span></label>
+                        <input type="checkbox" id="mycheckbox">
+                        <div class="queue-btn-dropdown">
+                            <a href="">Playlists</a>
+                            <hr>
+                            <a href="">Favourite Songs</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="queue-elements-container">
+                    
+                    <div class="queue-element">
+                        <div class="song-image-container">
+                            <p class="queue-number">01</p>
+                            <div class="image-container">
+                                <img class="queue-song-img" src="https://tse2.mm.bing.net/th?id=OIP.PXO2snYt7_94u1RnDaBrXgHaFj&pid=Api&P=0&h=180">
+                                <i class="fas play-btn fa-play"></i>
+                            </div>
+                            <div class="song-and-artist-container">
+                                <p class="queue-song-name">Yeh Desh Hai Veer Jawanon Ka</p>
+                                <p class="queue-artist-name">Naya Daur</p>
+                            </div>
+                        </div>
+                        <span class="nav-link">
+                            <button fdprocessedid="vr1ws"><i class="far wishlist-icon fa-heart"></i></button>
+                        </span>
+                    </div>
+                    <div class="queue-element">
+                        <div class="song-image-container">
+                            <p class="queue-number">02</p>
+                            <div class="image-container">
+                                <img class="queue-song-img" src="https://www.pngjoy.com/pngm/22/549107_tiranga-national-flag-of-india-png-hd-png.png">
+                                <i class="fas play-btn fa-play"></i>
+                            </div>
+                            <div class="song-and-artist-container">
+                                <p class="queue-song-name">Phir Bhi Dil Hai Hindustani</p>
+                                <p class="queue-artist-name">Phir Bhi Dil Hai Hindustani</p>
+                            </div>
+                        </div>
+                        <span class="nav-link">
+                            <button fdprocessedid="9w4oyc"><i class="far wishlist-icon fa-heart"></i></button>
+                        </span>
+                    </div>
+                    <div class="queue-element">
+                        <div class="song-image-container">
+                            <p class="queue-number">03</p>
+                            <div class="image-container">
+                                <img class="queue-song-img" src="https://tse2.mm.bing.net/th?id=OIP.PXO2snYt7_94u1RnDaBrXgHaFj&pid=Api&P=0&h=180">
+                                <i class="fas play-btn fa-play"></i>
+                            </div>
+                            <div class="song-and-artist-container">
+                                <p class="queue-song-name">Mere Desh Ki Dharti</p>
+                                <p class="queue-artist-name">Upkar</p>
+                            </div>
+                        </div>
+                        <span class="nav-link">
+                            <button fdprocessedid="ybq37"><i class="far wishlist-icon fa-heart"></i></button>
+                        </span>
+                    </div>
+
+                    <div class="queue-element">
+                        <div class="song-image-container">
+                            <p class="queue-number">04</p>
+                            <div class="image-container">
+                                <img class="queue-song-img" src="https://tse2.mm.bing.net/th?id=OIP.PXO2snYt7_94u1RnDaBrXgHaFj&pid=Api&P=0&h=180">
+                                <i class="fas play-btn fa-play"></i>
+                            </div>
+                            <div class="song-and-artist-container">
+                                <p class="queue-song-name">Yeh Desh Hai Veer Jawanon Ka</p>
+                                <p class="queue-artist-name">Naya Daur</p>
+                            </div>
+                        </div>
+                        <span class="nav-link">
+                            <button fdprocessedid="vr1ws"><i class="far wishlist-icon fa-heart"></i></button>
+                        </span>
+                    </div>
+                    <div class="queue-element">
+                        <div class="song-image-container">
+                            <p class="queue-number">05</p>
+                            <div class="image-container">
+                                <img class="queue-song-img" src="https://www.pngjoy.com/pngm/22/549107_tiranga-national-flag-of-india-png-hd-png.png">
+                                <i class="fas play-btn fa-play"></i>
+                            </div>
+                            <div class="song-and-artist-container">
+                                <p class="queue-song-name">Phir Bhi Dil Hai Hindustani</p>
+                                <p class="queue-artist-name">Phir Bhi Dil Hai Hindustani</p>
+                            </div>
+                        </div>
+                        <span class="nav-link">
+                            <button fdprocessedid="9w4oyc"><i class="far wishlist-icon fa-heart"></i></button>
+                        </span>
+                    </div>
+                    <div class="queue-element">
+                        <div class="song-image-container">
+                            <p class="queue-number">06</p>
+                            <div class="image-container">
+                                <img class="queue-song-img" src="https://tse2.mm.bing.net/th?id=OIP.PXO2snYt7_94u1RnDaBrXgHaFj&pid=Api&P=0&h=180">
+                                <i class="fas play-btn fa-play"></i>
+                            </div>
+                            <div class="song-and-artist-container">
+                                <p class="queue-song-name">Mere Desh Ki Dharti</p>
+                                <p class="queue-artist-name">Upkar</p>
+                            </div>
+                        </div>
+                        <span class="nav-link">
+                            <button fdprocessedid="ybq37"><i class="far wishlist-icon fa-heart"></i></button>
+                        </span>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+
+            
+
+
+
+
+        <footer>
+           
+            <div id="footer-song-info">
+                <div id="footer-song-image"></div>
+                <div id="footer-song-name">
+                    <span style="color:white">I Love My India</span>
+                    <span class="subtitle">Pardes</span>
+                </div>
+                <div>
+                    <span class="nav-link">
+                        <i class="far fa-heart subtitle"></i>
+                    </span>
+                    <span class="nav-link">
+                        <i class="fas fa-ban subtitle"></i>
+                    </span>
+                </div>
+            </div>
+
+            <!--  Player Controls -->
+            <div id="player">
+
+                <div id="player-control">
+                    <div><i class="fas fa-random" style="color:white;"></i></div>
+                    <div><i class="fas fa-step-backward" style="color:white;"></i></div>
+                    <div><i class="far fa-pause-circle" style="font-size: 2rem; color:white;"></i></div>
+                    <div><i class="fas fa-step-forward" style="color:white;"></i></div>
+                    <div><i class="fas fa-redo" style="color:white;"></i></div>
+                </div>
+
+                <div id="player-slider-container">
+                    <div class="subtitle">
+                        0:00
+                    </div>
+
+                    <input type="range" min="0" max="100" value="25">
+
+                    <div class="subtitle">
+                        7:57
+                    </div>
+                </div>
+            </div>
+
+            <!-- Volume buttom, -->
+            <div class="player-extras">
+                <div>
+                    <i class="fas fa-list-ul" style="color:white;"></i>
+                </div>
+                <div>
+                    <i class="fas fa-laptop" style="color:white;"></i>
+                </div>
+
+                <div class="volume-container" style="color:white;">
+                    <span><i class="fas fa-volume-up"></i></span>
+                    <input type="range" min="0" max="100" value="50" class="slider" id="volume-slider">
+                </div>
+                <div><i class="fas fa-expand" style="color:white;"></i></div>
+            </div>
+
+        </footer>
+    </div>
+
+
+
+    </div>
+
+
+</body>
+</html>
